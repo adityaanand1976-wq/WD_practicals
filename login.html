@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="content">
+    <h1>Login</h1>
+    <p>Enter your details in the form below.</p>
+    <form class="form-box" action="#" method="post" onsubmit="event.preventDefault(); alert('Demo login form submitted.');">
+      <label for="username">User name</label>
+      <input id="username" name="username" type="text" required>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" required>
+      <div class="button-row">
+        <button type="submit">Submit</button>
+        <button type="reset" class="secondary">Reset</button>
+      </div>
+      <p class="small-text">New here? <a href="registration.html" target="rightFrame">Create an account</a>.</p>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="content">
+    <h1>Registration Form</h1>
+    <p>Fill in the details below. Fields marked required must be completed.</p>
+    <form class="form-box" id="registrationForm" action="#" method="post" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" minlength="6" pattern="[A-Za-z ]{6,}" title="Use at least 6 letters and spaces only" required>
+      <span class="error" id="nameError"></span>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" minlength="6" required>
+      <span class="error" id="passwordError"></span>
+
+      <label for="email">E-mail ID</label>
+      <input type="email" id="email" name="email" required>
+      <span class="error" id="emailError"></span>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" inputmode="numeric" maxlength="10" pattern="[0-9]{10}" title="Enter exactly 10 digits" required>
+      <span class="error" id="phoneError"></span>
+
+      <fieldset>
+        <legend>Sex</legend>
+        <label class="inline"><input type="radio" name="sex" value="Male" required> Male</label>
+        <label class="inline"><input type="radio" name="sex" value="Female"> Female</label>
+        <label class="inline"><input type="radio" name="sex" value="Other"> Other</label>
+      </fieldset>
+
+      <label>Date of Birth</label>
+      <div class="dob-row">
+        <select id="dobDay" name="dobDay" required><option value="">Day</option></select>
+        <select id="dobMonth" name="dobMonth" required>
+          <option value="">Month</option><option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option>June</option><option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option>
+        </select>
+        <select id="dobYear" name="dobYear" required><option value="">Year</option></select>
+      </div>
+
+      <fieldset>
+        <legend>Languages known</legend>
+        <label class="inline"><input type="checkbox" name="languages" value="English"> English</label>
+        <label class="inline"><input type="checkbox" name="languages" value="Telugu"> Telugu</label>
+        <label class="inline"><input type="checkbox" name="languages" value="Hindi"> Hindi</label>
+        <label class="inline"><input type="checkbox" name="languages" value="Tamil"> Tamil</label>
+      </fieldset>
+
+      <label for="address">Address</label>
+      <textarea id="address" name="address" rows="3"></textarea>
+      <div class="button-row">
+        <button type="submit">Submit</button>
+        <button type="reset" class="secondary">Reset</button>
+      </div>
+      <p id="formMessage" class="form-message" aria-live="polite"></p>
+    </form>
+  </main>
+  <script src="js/validation.js"></script>
+</body>
+</html>

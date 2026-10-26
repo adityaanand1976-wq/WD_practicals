@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Catalogue</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="showDepartmentHeading()">
+  <main class="content wide">
+    <p class="eyebrow">FIND YOUR NEXT READ</p>
+    <h1 id="catalogueHeading">Book Catalogue</h1>
+    <p>Choose a book and select Add to Cart.</p>
+    <div class="table-wrap">
+      <table class="catalogue">
+        <thead>
+          <tr><th>Cover</th><th>Book</th><th>Author</th><th>Publisher</th><th>Price</th><th>Action</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="book-cover cover-blue">C++</div></td><td>Programming with C++</td><td>E. Balagurusamy</td><td>McGraw Hill</td><td>₹450</td>
+            <td><button class="add-cart-btn" data-name="Programming with C++" data-price="450">Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td><div class="book-cover cover-orange">HTML</div></td><td>HTML and CSS Basics</td><td>Jon Duckett</td><td>Wiley</td><td>₹520</td>
+            <td><button class="add-cart-btn" data-name="HTML and CSS Basics" data-price="520">Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td><div class="book-cover cover-green">DSA</div></td><td>Data Structures</td><td>Seymour Lipschutz</td><td>McGraw Hill</td><td>₹390</td>
+            <td><button class="add-cart-btn" data-name="Data Structures" data-price="390">Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td><div class="book-cover cover-purple">AI</div></td><td>Artificial Intelligence</td><td>Stuart Russell</td><td>Pearson</td><td>₹650</td>
+            <td><button class="add-cart-btn" data-name="Artificial Intelligence" data-price="650">Add to Cart</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script src="js/cart.js"></script>
+</body>
+</html>

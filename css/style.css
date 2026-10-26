@@ -1,0 +1,372 @@
+/* Shared styles for BOOK SHOP - BCS353 Web Designing Workshop */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #222;
+  background: #fff;
+}
+
+a {
+  color: #243954;
+}
+
+a:visited {
+  color: #4b5260;
+}
+
+a:hover {
+  color: #8b3e2f;
+}
+
+a:active {
+  color: #b36a24;
+}
+
+/* Header with college logo, website title and navigation */
+.top-page {
+  background: #fff;
+}
+
+.top-frame {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 12px;
+  background: #fff;
+  border-bottom: 3px solid #263a57;
+}
+
+.college-logo {
+  width: 62px;
+  height: 54px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-right: auto;
+}
+
+.brand strong {
+  font-size: 20px;
+  color: #263a57;
+}
+
+.brand span {
+  font-size: 12px;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 7px 9px;
+  color: #263a57;
+  text-decoration: none;
+  border: 1px solid #c3c7cc;
+  background: #fff;
+  font-size: 13px;
+}
+
+.navbar a:visited {
+  color: #263a57;
+}
+
+.navbar a:hover {
+  color: #fff;
+  background: #263a57;
+}
+
+/* Left department frame */
+.left-page {
+  background: #f5f5f5;
+}
+
+.left-frame {
+  min-height: 100vh;
+  padding: 14px 10px;
+  border-right: 1px solid #aaa;
+  background: #f5f5f5;
+}
+
+.left-frame h3 {
+  margin: 0 0 14px;
+  padding-bottom: 8px;
+  color: #263a57;
+  font-size: 16px;
+  border-bottom: 1px solid #aaa;
+}
+
+.left-frame a {
+  display: block;
+  margin: 8px 0;
+  padding: 8px;
+  color: #263a57;
+  background: #fff;
+  border: 1px solid #b8b8b8;
+  text-align: center;
+  text-decoration: none;
+}
+
+.left-frame a:hover {
+  color: #fff;
+  background: #263a57;
+}
+
+/* Content area used by the website pages */
+.content {
+  max-width: 850px;
+  padding: 22px;
+  margin: 0 auto;
+}
+
+.content.wide {
+  max-width: 1100px;
+}
+
+h1 {
+  margin: 0 0 14px;
+  color: #263a57;
+  font-size: 24px;
+}
+
+h2 {
+  color: #263a57;
+  font-size: 19px;
+}
+
+p, li {
+  line-height: 1.5;
+}
+
+.welcome-panel {
+  margin-top: 18px;
+  padding: 12px 16px;
+  border: 1px solid #bdbdbd;
+  background: #fafafa;
+}
+
+.welcome-panel h2 {
+  margin-top: 2px;
+}
+
+.small-text {
+  color: #555;
+  font-size: 12px;
+}
+
+/* Login and registration forms */
+.form-box {
+  max-width: 620px;
+  margin-top: 16px;
+  padding: 18px;
+  border: 1px solid #bdbdbd;
+  background: #fafafa;
+}
+
+.form-box > label {
+  display: block;
+  margin: 12px 0 5px;
+  font-weight: bold;
+}
+
+.form-box input[type="text"],
+.form-box input[type="password"],
+.form-box input[type="email"],
+.form-box input[type="tel"],
+.form-box textarea,
+.form-box select {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #aaa;
+  border-radius: 0;
+  background: #fff;
+  font: inherit;
+}
+
+.form-box input:focus,
+.form-box textarea:focus,
+.form-box select:focus {
+  outline: 1px solid #263a57;
+}
+
+fieldset {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+
+legend {
+  color: #263a57;
+  font-weight: bold;
+}
+
+.inline {
+  display: inline-block;
+  margin: 5px 12px 5px 0;
+  font-weight: normal;
+}
+
+.dob-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 8px;
+}
+
+.button-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+button {
+  padding: 7px 14px;
+  border: 1px solid #263a57;
+  border-radius: 0;
+  color: #fff;
+  background: #263a57;
+  cursor: pointer;
+  font: inherit;
+}
+
+button:hover {
+  background: #405574;
+}
+
+button.secondary {
+  color: #263a57;
+  background: #fff;
+}
+
+button.secondary:hover {
+  color: #fff;
+  background: #555;
+  border-color: #555;
+}
+
+.error {
+  display: block;
+  min-height: 14px;
+  margin-top: 3px;
+  color: #a12622;
+  font-size: 12px;
+}
+
+.form-message {
+  color: #263a57;
+  font-weight: bold;
+}
+
+/* Catalogue and cart tables */
+.table-wrap {
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th, td {
+  padding: 9px 8px;
+  border: 1px solid #aaa;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  color: #fff;
+  background: #263a57;
+}
+
+tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.book-cover {
+  width: 52px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: 1px solid #666;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.cover-blue { background: #426b8b; }
+.cover-orange { background: #a96543; }
+.cover-green { background: #577b5a; }
+.cover-purple { background: #716b8b; }
+
+.add-cart-btn {
+  padding: 6px 9px;
+  white-space: nowrap;
+}
+
+.qty-btn {
+  padding: 3px 8px;
+  margin: 0 3px;
+}
+
+.remove-btn {
+  padding: 4px;
+  color: #9c2525;
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+}
+
+.remove-btn:hover {
+  color: #6c1111;
+  background: transparent;
+}
+
+.total-row {
+  font-weight: bold;
+  background: #e5e5e5;
+}
+
+@media (max-width: 850px) {
+  .top-frame {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .content {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dob-row {
+    grid-template-columns: 1fr;
+  }
+
+  th, td {
+    padding: 7px 5px;
+  }
+}

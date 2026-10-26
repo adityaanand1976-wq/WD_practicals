@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="renderCart()">
+  <main class="content wide">
+    <p class="eyebrow">YOUR SELECTED BOOKS</p>
+    <h1>Shopping Cart</h1>
+    <p>Change the quantity or remove a book from your cart.</p>
+    <div class="table-wrap">
+      <table class="cart">
+        <thead><tr><th>Book name</th><th>Price</th><th>Quantity</th><th>Amount</th><th>Action</th></tr></thead>
+        <tbody id="cartBody"></tbody>
+        <tfoot><tr class="total-row"><td colspan="3">Total amount</td><td id="cartTotal">₹0</td><td></td></tr></tfoot>
+      </table>
+    </div>
+    <p class="small-text"><a href="catalogue.html" target="rightFrame">Return to catalogue</a></p>
+  </main>
+  <script src="js/cart.js"></script>
+</body>
+</html>
